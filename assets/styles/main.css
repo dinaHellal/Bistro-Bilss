@@ -5,6 +5,7 @@
 }
 :root {
   --button-color: #ad343e;
+  --btn-color:#000;
   --bg-color: #f9f9f7;
   --hover: #adabab;
   --banner-color: #474747;
@@ -13,21 +14,24 @@
   --red-color: #f63440;
   --orange-color: #ff3008;
   --white: #ffffff;
-  --black: #000000;
-  --section-padding: 40px;
+  --text-color: #000000;
+  --section-padding: 60px;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
 }
 
 body.dark-theme {
   --white: #1b1a35;
-  --background-color: #18162c;
+  --bg-color:#18162c;
+  --p-color: #ffffff;
   --black: #ffffff;
+  --btn-color: #ffffff;
+  --text-color:#ffffff;
 }
 section {
   padding: var(--section-padding) 0;
@@ -45,7 +49,7 @@ ul {
 .d-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 20px;
 }
 .description {
@@ -233,14 +237,13 @@ header .container ul li a {
   height: 100vh;
 }
 .hero .container {
-  margin: auto;
   display: var(--section-padding);
   text-align: center;
 }
 .hero .container h1 {
   font-size: 80px;
   font-family: serif;
-  margin: auto;
+  /* margin: 130px; */
   line-height: 1;
   font-weight: 400;
   margin-bottom: 20px;
@@ -259,7 +262,34 @@ header .container ul li a {
   border-radius: 25px;
   outline: none; 
   border: 1px solid;
-  color: var(--black);
   cursor: pointer;
 
 }
+.menu{
+  text-align: center;
+  padding: var(--section-padding);
+  color: var(--text-color);
+}
+.menu h2{
+  font-size: 40px;
+  font-weight: 400;
+}
+.menu .cards {
+  padding: 80px 0;
+  justify-content: center;
+}
+.menu .cards .card{
+  width: 250px;
+  border: 1px solid var(--hover) ;
+  border-radius: 10px;
+  padding: 20px;
+}
+.menu .cards .card .exmenu{
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--button-color);
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+}
+
