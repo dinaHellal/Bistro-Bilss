@@ -6,9 +6,9 @@
 :root {
   --button-color: #ad343e;
   --bg-color: #f9f9f7;
-  --hover:rgb(173, 171, 171);
+  --hover: #adabab;
   --banner-color: #474747;
-  --p-color: #414536;
+  --p-color: #2C2F24;
   --eats-color: #414536;
   --red-color: #f63440;
   --orange-color: #ff3008;
@@ -24,11 +24,10 @@ body {
   background-color: var(--background-color);
 }
 
-body.dark-theme{
-  --white:#1b1a35;
-  --background-color:#18162c;
-  --black:#ffffff;
-
+body.dark-theme {
+  --white: #1b1a35;
+  --background-color: #18162c;
+  --black: #ffffff;
 }
 section {
   padding: var(--section-padding) 0;
@@ -50,7 +49,7 @@ ul {
   gap: 20px;
 }
 .description {
-  font-size: 16px;
+  font-size: 14px;
   padding: 10px;
   color: var(--p-color);
   margin-bottom: 20px;
@@ -58,10 +57,6 @@ ul {
 }
 .text-center {
   text-align: center;
-}
-.btn {
-  padding: 15px;
-  border-radius: 4px;
 }
 @media (min-width: 768px) {
   .container {
@@ -106,7 +101,6 @@ ul {
     display: none;
     background-color: var(--white);
   }
-  
 }
 header {
   position: sticky;
@@ -144,32 +138,33 @@ header .container ul {
   gap: 50px;
   list-style: none;
 }
-header .container ul li .book{
+header .container ul li .book {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid;
   border-radius: 20px;
   margin-left: 100px;
+  cursor: pointer;
 }
-header .container ul li .book:hover{
+header .container ul li .book:hover {
   background-color: var(--button-color);
   color: var(--white);
   border: none;
 }
-header .container .moon{
+header .container .moon {
   width: 40px;
   position: absolute;
   top: 5px;
   right: -50px;
 }
-header .container ul li a:hover{
+header .container ul li a:hover {
   background-color: var(--hover);
   border-radius: 20px;
-padding: 10px 17px;
-behavior: smooth;
+  padding: 10px 17px;
+  behavior: smooth;
 }
-header label  img {
+header label img {
   display: none;
 }
 
@@ -187,30 +182,30 @@ header .container ul li a {
     background-color: var(--white);
     border: 1px solid rgb(0 0 0 / 0.1);
   }
-  header .container   img{
+  header .container img {
     width: 40px;
     position: absolute;
     top: 0;
   }
-  header .container .logo img{
+  header .container .logo img {
     width: 30px;
     position: absolute;
     top: -3px;
     left: -10px;
   }
-  
+
   header .container ul li {
     padding: 15px;
     border-bottom: 1px solid rgb(0 0 0 / 0.1);
   }
-  header .container ul li .book{
+  header .container ul li .book {
     padding: 10px;
     font-size: 13px;
   }
   header .container ul li:last-child {
     border-bottom: none;
   }
-  header .container .moon{
+  header .container .moon {
     width: 40px;
     position: absolute;
     top: 5px;
@@ -230,4 +225,41 @@ header .container ul li a {
     color: var(--text-color);
     margin-left: 0;
   }
+}
+.hero {
+  background-image: url(../images/bg.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.hero .container {
+  margin: auto;
+  display: var(--section-padding);
+  text-align: center;
+}
+.hero .container h1 {
+  font-size: 80px;
+  font-family: serif;
+  margin: auto;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.hero .container .btn1{
+  padding: 15px 20px;
+  border-radius: 25px;
+  outline: none; 
+  border: none;
+  background-color: var(--button-color);
+  color: var(--white);
+  cursor: pointer;
+}
+.hero .container .btn{
+  padding: 15px 20px;
+  border-radius: 25px;
+  outline: none; 
+  border: 1px solid;
+  color: var(--black);
+  cursor: pointer;
+
 }

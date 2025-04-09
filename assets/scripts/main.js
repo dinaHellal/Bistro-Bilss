@@ -9,5 +9,8 @@ document.getElementById("moon").onclick = () => {
 };
 
   function goToPage() {
-    window.location.href = "page2.html"; 
+    window.location.href = "book.html"; 
+  }
+  function goToPage() {
+    window.location.href = "menu.html"; 
   }
