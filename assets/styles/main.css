@@ -6,6 +6,7 @@
 :root {
   --button-color: #ad343e;
   --bg-color: #f9f9f7;
+  --hover:rgb(173, 171, 171);
   --banner-color: #474747;
   --p-color: #414536;
   --eats-color: #414536;
@@ -20,6 +21,14 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+}
+
+body.dark-theme{
+  --white:#1b1a35;
+  --background-color:#18162c;
+  --black:#ffffff;
+
 }
 section {
   padding: var(--section-padding) 0;
@@ -87,7 +96,7 @@ ul {
   width: 23px;
 }
 @media (max-width: 991px) {
-  .banner{
+  .banner {
     width: 100%;
   }
   .banner .icon img {
@@ -97,5 +106,124 @@ ul {
     display: none;
     background-color: var(--white);
   }
+  
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  background-color: var(--white);
+  z-index: 10;
+  border-bottom: 1px solid var(--border);
+}
+nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+nav .container .logo p {
+  font-size: 25px;
+  color: var(--black);
+  font-weight: 400;
+  font-family: serif;
+}
+nav .container .logo img {
+  width: 30px;
 }
 
+nav .container input {
+  appearance: none;
+}
+header .container ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+header .container ul li .book{
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid;
+  border-radius: 20px;
+  margin-left: 100px;
+}
+header .container ul li .book:hover{
+  background-color: var(--button-color);
+  color: var(--white);
+  border: none;
+}
+header .container .moon{
+  width: 40px;
+  position: absolute;
+  top: 5px;
+  right: -50px;
+}
+header .container ul li a:hover{
+  background-color: var(--hover);
+  border-radius: 20px;
+padding: 10px 17px;
+behavior: smooth;
+}
+header label  img {
+  display: none;
+}
+
+header .container ul li a {
+  font-size: 18px;
+  color: var(--black);
+}
+@media (max-width: 991px) {
+  header .container ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    padding: 10px 40px;
+    background-color: var(--white);
+    border: 1px solid rgb(0 0 0 / 0.1);
+  }
+  header .container   img{
+    width: 40px;
+    position: absolute;
+    top: 0;
+  }
+  header .container .logo img{
+    width: 30px;
+    position: absolute;
+    top: -3px;
+    left: -10px;
+  }
+  
+  header .container ul li {
+    padding: 15px;
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+  }
+  header .container ul li:last-child {
+    border-bottom: none;
+  }
+  header .container .moon{
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    right: 70px;
+  }
+  header label img {
+    display: block;
+    position: absolute;
+    right: 10px;
+  }
+  header .container input:checked + ul {
+    display: block;
+  }
+  header .container ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-left: 0;
+  }
+}
