@@ -205,6 +205,7 @@ header .container ul li a {
   }
   header .container ul li .book{
     padding: 10px;
+    font-size: 13px;
   }
   header .container ul li:last-child {
     border-bottom: none;
