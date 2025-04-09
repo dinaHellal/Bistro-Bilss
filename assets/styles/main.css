@@ -7,7 +7,7 @@
   --button-color: #ad343e;
   --btn-color:#000;
   --bg-color: #f9f9f7;
-  --hover: #adabab;
+  --hover: #e7e2e2;
   --banner-color: #474747;
   --p-color: #2C2F24;
   --eats-color: #414536;
@@ -32,6 +32,7 @@ body.dark-theme {
   --black: #ffffff;
   --btn-color: #ffffff;
   --text-color:#ffffff;
+  --hover:#18162c;
 }
 section {
   padding: var(--section-padding) 0;
@@ -49,7 +50,6 @@ ul {
 .d-flex {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   gap: 20px;
 }
 .description {
@@ -80,6 +80,10 @@ ul {
 .banner {
   background-color: var(--banner-color);
   height: 20px;
+}
+.banner .container {
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .banner img {
@@ -291,5 +295,89 @@ header .container ul li a {
   margin-bottom: 10px;
   border: none;
   outline: none;
+  background-color: transparent;
 }
-
+.about{
+  position: relative;
+  background-color: var(--hover);
+}
+.about .container{
+  justify-content: space-between;
+  gap: 30px;
+}
+.about-img{
+padding: 10px;
+line-height: 1.5;
+}
+.about-inv{
+  background-color: var(--banner-color);
+  width: 411px;
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--hover);
+}
+.about h5{
+  color: var(--white);
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+.about-inv{
+  position: absolute;
+  bottom: 100px;
+  left: 400px;
+}
+.about-inv img{
+width: 20px;
+height: 30px;
+}
+.about-inv p{
+  padding-bottom: 25px;
+}
+.about-inv h2{
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px){
+  .about-img img{
+    width: 100%;
+  }
+  .about-inv{
+    position: absolute;
+    bottom: -250px;
+    left: 40px;
+    padding: 20px;
+    border-radius: 15px;
+    color: var(--hover);
+  }
+  .about-inv img{
+    width: 20px;
+    height: 30px;
+  }
+  .about-inv p{
+    padding-bottom: 25px;
+  }
+  .about-inv h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+}
+.about-info{
+  width: 400px;
+  padding-top: 60px;
+}
+.about-info h3{
+  font-size: 40px;
+  font-weight: 400;
+}
+.about-info button{
+  padding: 30px 40px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid;
+  border-radius: 50px;
+  margin-left: 100px;
+  cursor: pointer;
+  background: transparent;
+}
