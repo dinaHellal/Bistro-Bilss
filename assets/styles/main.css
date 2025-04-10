@@ -414,6 +414,11 @@ header .container ul li a {
   color: var(--text-color);
   margin-bottom: 10px;
 }
+@media (max-width: 991px){
+  .service .cards .card img{
+    margin: auto;
+  }
+}
 .Delivery {
   padding: var(--section-padding);
 }
