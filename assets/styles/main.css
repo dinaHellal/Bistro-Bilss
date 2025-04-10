@@ -5,11 +5,12 @@
 }
 :root {
   --button-color: #ad343e;
-  --btn-color:#000;
+  --btn-color: #000;
   --bg-color: #f9f9f7;
   --hover: #e7e2e2;
+  --cards-color:#f5f0f0;
   --banner-color: #474747;
-  --p-color: #2C2F24;
+  --p-color: #2c2f24;
   --eats-color: #414536;
   --red-color: #f63440;
   --orange-color: #ff3008;
@@ -27,12 +28,13 @@ body {
 
 body.dark-theme {
   --white: #1b1a35;
-  --bg-color:#18162c;
+  --bg-color: #18162c;
   --p-color: #ffffff;
+  --cards-color:#1b1a35;
   --black: #ffffff;
   --btn-color: #ffffff;
-  --text-color:#ffffff;
-  --hover:#18162c;
+  --text-color: #ffffff;
+  --hover: #18162c;
 }
 section {
   padding: var(--section-padding) 0;
@@ -252,29 +254,28 @@ header .container ul li a {
   font-weight: 400;
   margin-bottom: 20px;
 }
-.hero .container .btn1{
+.hero .container .btn1 {
   padding: 15px 20px;
   border-radius: 25px;
-  outline: none; 
+  outline: none;
   border: none;
   background-color: var(--button-color);
   color: var(--white);
   cursor: pointer;
 }
-.hero .container .btn{
+.hero .container .btn {
   padding: 15px 20px;
   border-radius: 25px;
-  outline: none; 
+  outline: none;
   border: 1px solid;
   cursor: pointer;
-
 }
-.menu{
+.menu {
   text-align: center;
   padding: var(--section-padding);
   color: var(--text-color);
 }
-.menu h2{
+.menu h2 {
   font-size: 40px;
   font-weight: 400;
 }
@@ -282,13 +283,13 @@ header .container ul li a {
   padding: 80px 0;
   justify-content: center;
 }
-.menu .cards .card{
+.menu .cards .card {
   width: 250px;
-  border: 1px solid var(--hover) ;
+  border: 1px solid var(--hover);
   border-radius: 10px;
   padding: 20px;
 }
-.menu .cards .card .exmenu{
+.menu .cards .card .exmenu {
   font-size: 15px;
   font-weight: 400;
   color: var(--button-color);
@@ -297,52 +298,52 @@ header .container ul li a {
   outline: none;
   background-color: transparent;
 }
-.about{
+.about {
   position: relative;
   background-color: var(--hover);
 }
-.about .container{
+.about .container {
   justify-content: space-between;
   gap: 30px;
 }
-.about-img{
-padding: 10px;
-line-height: 1.5;
+.about-img {
+  padding: 10px;
+  line-height: 1.5;
 }
-.about-inv{
+.about-inv {
   background-color: var(--banner-color);
   width: 411px;
   padding: 20px;
   border-radius: 15px;
   color: var(--hover);
 }
-.about h5{
+.about h5 {
   color: var(--white);
   font-size: 16px;
   padding-bottom: 30px;
 }
-.about-inv{
+.about-inv {
   position: absolute;
   bottom: 100px;
   left: 400px;
 }
-.about-inv img{
-width: 20px;
-height: 30px;
+.about-inv img {
+  width: 20px;
+  height: 30px;
 }
-.about-inv p{
+.about-inv p {
   padding-bottom: 25px;
 }
-.about-inv h2{
+.about-inv h2 {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-@media (max-width: 991px){
-  .about-img img{
+@media (max-width: 991px) {
+  .about-img img {
     width: 300px;
   }
-  .about-inv{
+  .about-inv {
     position: absolute;
     left: 40px;
     padding: 20px;
@@ -350,34 +351,34 @@ height: 30px;
     border-radius: 15px;
     color: var(--hover);
   }
-  .about-inv img{
+  .about-inv img {
     width: 20px;
     height: 30px;
   }
-  .about-inv p{
+  .about-inv p {
     padding-bottom: 25px;
   }
-  .about-inv h2{
+  .about-inv h2 {
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 20px;
   }
-  .about-info p{
-font-size: 10px;
+  .about-info p {
+    font-size: 10px;
   }
-  .about-info{
+  .about-info {
     display: none;
   }
 }
-.about-info{
+.about-info {
   width: 400px;
   padding-top: 60px;
 }
-.about-info h3{
+.about-info h3 {
   font-size: 40px;
   font-weight: 400;
 }
-.about-info button{
+.about-info button {
   padding: 30px 40px;
   font-size: 16px;
   font-weight: 400;
@@ -387,78 +388,106 @@ font-size: 10px;
   cursor: pointer;
   background: transparent;
 }
-.service{
+.service {
   padding: var(--section-padding);
 }
-.service h2{
+.service h2 {
   font-size: 40px;
   font-weight: 400;
   padding-bottom: 30px;
-margin-left: 40px;
+  margin-left: 40px;
 }
 .service .cards {
-margin-left: 40px;
+  margin-left: 40px;
 }
-.service .cards .card img{
-  width: 250px;
+.service .cards .card img {
+  width: 240px;
   margin-bottom: 15px;
   border-radius: 10px;
 }
-.service .cards .card{
+.service .cards .card {
   width: 250px;
 }
-.service .cards .card h5{
+.service .cards .card h5 {
   font-size: 20px;
   font-weight: 400;
   color: var(--text-color);
   margin-bottom: 10px;
 }
-.Delivery{
+.Delivery {
   padding: var(--section-padding);
 }
-.Delivery .delivery-img .image1{
-height: 600px;
+.Delivery .delivery-img .image1 {
+  height: 600px;
 }
-.images2{
+.images2 {
   width: 200px;
   height: 240px;
   padding-top: 80px;
 }
-.images2 .shrimp{
+.images2 .shrimp {
   height: 290px;
   width: 200px;
   border-radius: 10px;
 }
-.images2 .meat{
+.images2 .meat {
   width: 200px;
   height: 240px;
   border-radius: 10px;
 }
-.delivery-info{
+.delivery-info {
   padding: 20px;
   width: 400px;
   padding-top: 200px;
-margin-left: 20px;
+  margin-left: 20px;
 }
-.delivery-info p{
+.delivery-info p {
   padding-top: 10px;
 }
-.delivery-info h3{
+.delivery-info h3 {
   font-size: 50px;
   font-weight: normal;
 }
-.delivery-icons .icon{
+.delivery-icons .icon {
   padding-top: 20px;
 }
 @media (max-width: 991px) {
   .Delivery .container .delivery-img .image1 img {
-width: 200px;
-  } 
-.delivery-info{
-  width: 300px;
-  position: relative;
-  top: 200px;
+    width: 200px;
+  }
+  .delivery-info {
+    width: 300px;
+    position: relative;
+    top: 200px;
+  }
 }
-
-
+.Customers {
+  padding: var(--section-padding);
+}
+.Customers h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.Customers .cards .card p{
+  border-bottom: 1px solid var(--hover);
+}
+.Customers .cards .card{
+  background-color: var(--cards-color);
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.Customers .cards .card h4{
+color: var(--button-color);
+font-size: 20px;
+padding-bottom: 5px;
+}
+.cards .card{
+  width: 300px; 
+  margin: auto;
+}
+@media (max-width: 991px){
+  .Customers h2{
+padding-top: 100px;  }
 }
