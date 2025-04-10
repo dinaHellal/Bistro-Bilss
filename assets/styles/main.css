@@ -400,7 +400,7 @@ margin-left: 40px;
 margin-left: 40px;
 }
 .service .cards .card img{
-  width: 180px;
+  width: 250px;
   margin-bottom: 15px;
   border-radius: 10px;
 }
@@ -412,4 +412,53 @@ margin-left: 40px;
   font-weight: 400;
   color: var(--text-color);
   margin-bottom: 10px;
+}
+.Delivery{
+  padding: var(--section-padding);
+}
+.Delivery .delivery-img .image1{
+height: 600px;
+}
+.images2{
+  width: 200px;
+  height: 240px;
+  padding-top: 80px;
+}
+.images2 .shrimp{
+  height: 290px;
+  width: 200px;
+  border-radius: 10px;
+}
+.images2 .meat{
+  width: 200px;
+  height: 240px;
+  border-radius: 10px;
+}
+.delivery-info{
+  padding: 20px;
+  width: 400px;
+  padding-top: 200px;
+margin-left: 20px;
+}
+.delivery-info p{
+  padding-top: 10px;
+}
+.delivery-info h3{
+  font-size: 50px;
+  font-weight: normal;
+}
+.delivery-icons .icon{
+  padding-top: 20px;
+}
+@media (max-width: 991px) {
+  .Delivery .container .delivery-img .image1 img {
+width: 200px;
+  } 
+.delivery-info{
+  width: 300px;
+  position: relative;
+  top: 200px;
+}
+
+
 }

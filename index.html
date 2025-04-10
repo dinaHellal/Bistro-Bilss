@@ -48,11 +48,11 @@
           <label for="toggle"><img src="assets/icons/menu.webp" alt="menu" /></label>
           <input type="checkbox" id="toggle" />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="menu">Menu</a></li>
-            <li><a href="pages">Pages</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#pages">Pages</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#" onclick="window.location.href='book.html'" class="book">Book A Table</a></li>
           
           </ul>
@@ -61,7 +61,7 @@
       </div>
     </nav>
   </header>
-<section class="hero">
+<section class="hero" id="home">
   <div class="container">
     <h1>Best food for <br>
       your taste</h1>
@@ -71,7 +71,8 @@
         <button class="btn" onclick="window.location.href='book.html'">Explore Menu</button>
     </div>
 </section>
-<section class="menu">
+<section class="menu" id="menu">
+
   <div class="container">
     <h2>Browse Our Menu</h2>
     <div class="cards d-flex">
@@ -102,7 +103,7 @@
     </div>
   </div>
 </section>
-<section class="about d-flex ">
+<section class="about d-flex " id="about">
   <div class="container d-flex ">
     <div class="about-img ">
 <img src="assets/images/Image (8).png" alt="about">
@@ -146,22 +147,54 @@
       </div>
       <div class="card">
         <img src="assets/images/birthday.png" alt="kebab">
-        <h5>kebab</h5>
+        <h5>Birthdays</h5>
         <p class="description">In the new era of technology we look in the future with certainty for life.</p>
       </div>
       <div class="card">
         <img src="assets/images/happy-man-wife-sunny-day 1.png" alt="kebab">
-        <h5>kebab</h5>
+        <h5>Weddings</h5>
         <p class="description">In the new era of technology we look in the future with certainty for life.</p>
       </div>
       <div class="card">
         <img src="assets/images/group-friends-eating-restaurant 1.png" alt="kebab">
-        <h5>kebab</h5>
+        <h5>Events</h5>
         <p class="description">In the new era of technology we look in the future with certainty for life.</p>
       </div>
     </div>
   </div>
 </section>
+<div class="Delivery d-flex">
+  <div class="container d-flex">
+    <div class="delivery-img ">
+      <div class="image1 d-flex">
+        <img src="assets/images/mid-shot-chef-holding-plate-with-pasta-making-ok-sign 1.png" alt="delivery">
+        <div class="images2"> 
+        <img src="assets/images/sour-curry-with-snakehead-fish-spicy-garden-hot-pot-thai-food 1.png" class="shrimp" alt="delivery"> <br>
+        <img src="assets/images/sadj-iron-pot-with-various-salads 1.png" class="meat" alt="delivery">
+      </div>
+      </div>
+    </div>
+    <div class="delivery-info">
+      <h3>Fastest Food Delivery in City</h3>
+      <p class="description">Our visual designer lets you quickly and of drag a down 
+        your way to customapps for both keep desktop. </p>
+    <div class="delivery-icons ">
+      <div class="icon d-flex">
+        <img src="assets/icons/Icon (4).png" alt="fast">
+        <p>Delivery within 30 minutes</p>
+      </div>
+      <div class="icon d-flex">
+        <img src="assets/icons/Icon (5).png" alt="fast">
+        <p>Best Offer & Prices</p>
+      </div>
+      <div class="icon d-flex">
+        <img src="assets/icons/Icon (6).png" alt="fast">
+        <p>Online Services Available</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
     <script src="assets/scripts/main.js"></script>
 </body>
 </html>
