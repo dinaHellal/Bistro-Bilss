@@ -345,16 +345,16 @@ header .container ul li a {
 }
 @media (max-width: 991px) {
   .about{
-    width: 100%;
+    width: 200px;
   }
   .about-img img {
-    width: 300px;
+    width: 250px;
   }
   .about-inv {
     position: absolute;
     left: 40px;
     padding: 20px;
-    width: 300px;
+    width: 250px;
     border-radius: 15px;
     color: var(--hover);
   }
@@ -478,7 +478,7 @@ header .container ul li a {
     width: 200px;
   }
   .delivery-info {
-    width: 300px;
+    width: 200px;
     position: relative;
     top: 200px;
   }
