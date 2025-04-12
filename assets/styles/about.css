@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --button-color: #ad343e;
+  --btn-color: #000;
+  --bg-color: #f9f9f7;
+  --hover: #e7e2e2;
+  --cards-color:#f5f0f0;
+  --banner-color: #474747;
+  --p-color: #2c2f24;
+  --eats-color: #414536;
+  --red-color: #f63440;
+  --orange-color: #ff3008;
+  --white: #ffffff;
+  --text-color: #000000;
+  --section-padding: 60px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color);
+}
+
+body.dark-theme {
+  --white: #1b1a35;
+  --banner-color:#bdb1b1;
+  --bg-color: #18162c;
+  --p-color: #ffffff;
+  --cards-color:#1b1a35;
+  --black: #ffffff;
+  --btn-color: #ffffff;
+  --text-color: #ffffff;
+  --hover: #18162c;
+}
+section {
+  padding: var(--section-padding) 0;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.description {
+  font-size: 14px;
+  padding: 10px;
+  color: var(--p-color);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.text-center {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.taste-features{
+  background-image: url(/assets/images/BG\ \(1\).png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.taste-features .container img{
+  width: 90px;
+  position: relative;
+  top: 190px;
+  left: 500px;
+}
+.taste-features .container h2{
+  position: absolute;
+  bottom:150px ;
+  left: 460px;
+  font-weight: normal;
+color: var(--white);
+font-size: 40px;
+}
+@media (max-width: 991px){
+  .taste-features .container img{
+    position: relative;
+    left: 150px;
+    top: 0;
+  }
+  .taste-features .container h2{
+    position: relative;
+    left: 50px;
+    top: 20px;
+  }
+}
+
+
