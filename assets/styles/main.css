@@ -433,6 +433,7 @@ header .container ul li a {
 }
 .delivery {
   padding: var(--section-padding);
+  margin: auto;
 }
 .delivery .delivery-img .image1 {
   height: 600px;
