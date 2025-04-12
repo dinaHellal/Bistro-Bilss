@@ -4,7 +4,7 @@ document.getElementById("moon").onclick = () => {
     document.getElementById("moon").src = "assets/icons/9254147_moon_crescent_night_mode_dark_icon.png";
   } else {
     document.body.classList.add("dark-theme");
-    document.getElementById("moon").src = "assets/icons/430079_brightness_sun_icon.png";
+    document.getElementById("moon").src = "assets/icons/2682848_day_forecast_sun_sunny_weather_icon.png";
   }
 };
 
@@ -13,4 +13,7 @@ document.getElementById("moon").onclick = () => {
   }
   function goToPage() {
     window.location.href = "menu.html"; 
+  }
+  function goToPage() {
+    window.location.href = "blog.html"; 
   }

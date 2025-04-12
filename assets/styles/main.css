@@ -28,6 +28,7 @@ body {
 
 body.dark-theme {
   --white: #1b1a35;
+  --banner-color:#bdb1b1;
   --bg-color: #18162c;
   --p-color: #ffffff;
   --cards-color:#1b1a35;
@@ -81,7 +82,7 @@ ul {
 }
 .banner {
   background-color: var(--banner-color);
-  height: 20px;
+  height: 10px;
 }
 .banner .container {
   justify-content: space-between;
@@ -249,10 +250,12 @@ header .container ul li a {
 .hero .container h1 {
   font-size: 80px;
   font-family: serif;
-  /* margin: 130px; */
   line-height: 1;
   font-weight: 400;
   margin-bottom: 20px;
+}
+.hero .container p{
+  color: var(--h);
 }
 .hero .container .btn1 {
   padding: 15px 20px;
@@ -260,7 +263,7 @@ header .container ul li a {
   outline: none;
   border: none;
   background-color: var(--button-color);
-  color: var(--white);
+  color: var(--p-color);
   cursor: pointer;
 }
 .hero .container .btn {
@@ -338,8 +341,12 @@ header .container ul li a {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
+
 }
 @media (max-width: 991px) {
+  .about{
+    width: 100%;
+  }
   .about-img img {
     width: 300px;
   }
@@ -374,9 +381,10 @@ header .container ul li a {
   width: 400px;
   padding-top: 60px;
 }
-.about-info h3 {
+.about-info h2 {
   font-size: 40px;
   font-weight: 400;
+  color: var(--text-color);
 }
 .about-info button {
   padding: 30px 40px;
@@ -387,6 +395,7 @@ header .container ul li a {
   margin-left: 100px;
   cursor: pointer;
   background: transparent;
+  color: var(--text-color);
 }
 .service {
   padding: var(--section-padding);
@@ -396,9 +405,12 @@ header .container ul li a {
   font-weight: 400;
   padding-bottom: 30px;
   margin-left: 40px;
+  color: var(--text-color);
+
 }
 .service .cards {
   margin-left: 40px;
+  justify-content: center;
 }
 .service .cards .card img {
   width: 240px;
@@ -419,10 +431,10 @@ header .container ul li a {
     margin: auto;
   }
 }
-.Delivery {
+.delivery {
   padding: var(--section-padding);
 }
-.Delivery .delivery-img .image1 {
+.delivery .delivery-img .image1 {
   height: 600px;
 }
 .images2 {
@@ -452,12 +464,17 @@ header .container ul li a {
 .delivery-info h3 {
   font-size: 50px;
   font-weight: normal;
+  color: var(--text-color);
 }
 .delivery-icons .icon {
   padding-top: 20px;
 }
+.delivery-icons .icon p{
+  color: var(--text-color);
+
+}
 @media (max-width: 991px) {
-  .Delivery .container .delivery-img .image1 img {
+  .delivery .container .delivery-img .image1 img {
     width: 200px;
   }
   .delivery-info {
@@ -466,24 +483,30 @@ header .container ul li a {
     top: 200px;
   }
 }
-.Customers {
+.customers {
   padding: var(--section-padding);
 }
-.Customers h2 {
+.customers h2 {
   font-size: 40px;
   font-weight: 400;
   padding-bottom: 80px;
   text-align: center;
+  color: var(--text-color);
+
 }
-.Customers .cards .card p{
+.customers .cards .card p{
   border-bottom: 1px solid var(--hover);
 }
-.Customers .cards .card{
+.customers .cards .card{
   background-color: var(--cards-color);
   padding: 20px 10px;
   border-radius: 10px;
 }
-.Customers .cards .card h4{
+.customers .user-info h5{
+  color: var(--text-color);
+
+}
+.customers .cards .card h4{
 color: var(--button-color);
 font-size: 20px;
 padding-bottom: 5px;
@@ -493,6 +516,94 @@ padding-bottom: 5px;
   margin: auto;
 }
 @media (max-width: 991px){
-  .Customers h2{
+  .customers h2{
 padding-top: 100px;  }
+}
+.blog{
+  background-color: var(--hover);
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.blog-header h2 {
+  font-size: 36px;
+  color: var(--text-color);
+}
+
+.blog-header button {
+  background-color: var(--button-color);
+  color: var(--white);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.blog-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card2 {
+  background: var(--white);
+  border-radius: 16px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card2 .text {
+  padding: 15px;
+}
+
+.card2 .text .date {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.card2 .text h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.card2 .text p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.card2.large {
+  flex: 1;
+  height: 620px;
+  min-width: 300px;
+}
+
+.right-cards {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card2.small {
+  width: calc(50% - 10px);
 }
