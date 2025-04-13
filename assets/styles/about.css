@@ -100,22 +100,37 @@ ul {
   bottom:150px ;
   left: 460px;
   font-weight: normal;
-color: var(--white);
+color: #fff;
 font-size: 40px;
 }
 @media (max-width: 991px){
   .taste-features .container img{
     position: relative;
     left: 150px;
-    top: 10px;
+    top: 230px;
     width: 70px;
   }
   .taste-features .container h2{
     position: relative;
     left: 50px;
-    top: 20px;
+    top: 250px;
     font-size: 27px;
   }
+}
+.features .feature{
+  width: 330px;
+}
+.features .feature img{
+  margin-top: 15px;
+}
+.features .feature h3{
+  color: var(--text-color);
+  margin-top: 25px;
+
+}
+.features .feature p{
+  margin-left: 40px;
+  
 }
 
 
