@@ -7,6 +7,14 @@ document.getElementById("moon").onclick = () => {
     document.getElementById("moon").src = "assets/icons/2682848_day_forecast_sun_sunny_weather_icon.png";
   }
 };
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      navLinks.forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
 
   function goToPage() {
     window.location.href = "book.html"; 
@@ -17,3 +25,11 @@ document.getElementById("moon").onclick = () => {
   function goToPage() {
     window.location.href = "blog.html"; 
   }
+  const tabs = document.querySelectorAll(".tab");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+    });
+  });

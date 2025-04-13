@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu Bistro Bliss</title>
   <link rel="stylesheet" href="assets/styles/main.css">
-  <link rel="stylesheet" href="assets/styles/meni.css">
+  <link rel="stylesheet" href="assets/styles/menu.css">
   <link rel="shortcut icon" href="assets/icons/logo1.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,12 +51,12 @@ opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,
           <label for="toggle"><img src="assets/icons/menu.webp" alt="menu" /></label>
           <input type="checkbox" id="toggle" />
           <ul>
-            <li><a href="#home" onclick="window.location.href='index.html'" >Home</a></li>
-            <li><a href="#about" onclick="window.location.href='about.html'">About</a></li>
-            <li><a href="#menu  "onclick="window.location.href='menu.html'" >Menu</a></li>
-            <li><a href="#pages" onclick="window.location.href='blog.html'" >Pages</a></li>
-            <li><a href="#contact" onclick="window.location.href='Contact.html'" >Contact</a></li>
-            <li><a href="#" onclick="window.location.href='book.html'" class="book">Book A Table</a></li>
+            <li><a href="#home" class="nav-link active" onclick="window.location.href='index.html'" >Home</a></li>
+            <li><a href="#about" class="nav-link " onclick="window.location.href='about.html'">About</a></li>
+            <li><a href="#menu " class="nav-link " onclick="window.location.href='menu.html'" >Menu</a></li>
+            <li><a href="#pages" class="nav-link " onclick="window.location.href='blog.html'" >Pages</a></li>
+            <li><a href="#contact" class="nav-link " onclick="window.location.href='Contact.html'" >Contact</a></li>
+            <li><a href="#" class="nav-link " onclick="window.location.href='book.html'" class="book">Book A Table</a></li>
           
           </ul>
         </div>
@@ -64,5 +64,26 @@ opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,
       </div>
     </nav>
   </header>
+  <section class="menu">
+    <div class="container">
+      <div class="our-menu">
+      <h2>Our Menu</h2> 
+      <p class="description">
+        We consider all the drivers of change gives you the components<br>
+        you need to change to create a truly happens.
+      </p>
+    </div> 
+      <div class="menu-tabs d-flex">
+        <div class="tabs">
+        <button class="tab active">All</button>
+        <button class="tab">Breakfast</button>
+        <button class="tab">Main Dishes</button>
+        <button class="tab">Drinks</button>
+        <button class="tab">Desserts</button>
+      </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/scripts/main.js"></script>
 </body>
 </html>

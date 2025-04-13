@@ -134,6 +134,13 @@ nav .container {
   justify-content: space-between;
   margin: auto;
 }
+.nav-link.active {
+  background-color: var(--button-color); /* أو أي لون مميز */
+  border-radius: 20px;
+  padding: 10px 17px;
+  color: var(--white); /* اختياري */
+}
+
 nav .container .logo p {
   font-size: 25px;
   color: var(--black);
