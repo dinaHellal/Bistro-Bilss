@@ -82,7 +82,10 @@ ul {
 }
 .banner {
   background-color: var(--banner-color);
-  height: 10px;
+  height: 40px;
+  overflow: hidden;
+  padding: 5px 0;
+
 }
 .banner .container {
   justify-content: space-between;
@@ -91,6 +94,7 @@ ul {
 
 .banner img {
   width: 20px;
+  height: 20px;
 }
 .banner p {
   font-size: 13px;
