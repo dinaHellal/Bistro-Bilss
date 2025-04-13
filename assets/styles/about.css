@@ -178,3 +178,8 @@ margin: auto;
     padding-left: 0px;
   }
 }
+.footer-description {
+  color: var(--secondary-color);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
