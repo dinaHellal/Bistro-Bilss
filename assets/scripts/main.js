@@ -33,3 +33,41 @@ document.getElementById("moon").onclick = () => {
       tab.classList.add("active");
     });
   });
+
+  const menuItems = document.querySelectorAll(".menu-item");
+  const form = document.getElementById("bookingForm");
+
+
+
+
+  window.onload = function () {
+    const form = document.getElementById("bookingForm");
+
+    document.getElementById("name").value = localStorage.getItem("name") || "";
+    document.getElementById("phone").value = localStorage.getItem("phone") || "";
+    document.getElementById("date").value = localStorage.getItem("date") || "";
+    document.getElementById("time").value = localStorage.getItem("time") || "";
+    document.getElementById("persons").value = localStorage.getItem("persons") || "1 Person";
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      localStorage.setItem("name", document.getElementById("name").value);
+      localStorage.setItem("phone", document.getElementById("phone").value);
+      localStorage.setItem("date", document.getElementById("date").value);
+      localStorage.setItem("time", document.getElementById("time").value);
+      localStorage.setItem("persons", document.getElementById("persons").value);
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Table Booked',
+        text: '✅Your data has been saved in your browser',
+        confirmButtonText: 'Ok'
+      });
+        });
+  };
+
+  
+
+
+  

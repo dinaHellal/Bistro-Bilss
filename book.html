@@ -64,5 +64,44 @@ opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,
       </div>
     </nav>
   </header>
+  <section class="book-table">
+      <div class="book-info">
+      <h2>Book A Table</h2>
+      <p class="description">We consider all the drivers of change gives you the components <br> you need to change to create a truly happens.</p>
+    </div>
+    <div class="map">
+      <div class="map-img">
+        <img src="assets/images/Map.png" alt="">
+</div>
+    </div>
+    <form class="booking-form" id="bookingForm">
+      <div class="form-row">
+        <input type="date" id="date" required />
+        <input type="time" id="time" value="18:30" required />
+      </div>
+      <div class="form-row">
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <input type="tel" id="phone" placeholder="x-xxx-xxx-xxxx" required />
+      </div>
+      <div class="form-row">
+        <select id="persons" required>
+          <option value="">Select Person</option>
+          <option>1 Person</option>
+          <option>2 Persons</option>
+          <option>3 Persons</option>
+          <option>4 Persons</option>
+        </select>
+      </div>
+      <button type="submit" >Book A Table</button>
+    </form>
+    <p id="msg" style="margin-top: 15px; font-weight: bold;"></p>
+    
+      </div>
+    </section>
+    
+  </section>
+  <script
+  src="assets/scripts/main.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
