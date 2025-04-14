@@ -177,3 +177,34 @@ ul {
   color: #666;
   line-height: 1.5;
 }
+.order-app{
+  background-color: var(--hover);
+}
+.order-info{
+  padding-top: 50px;
+  margin: auto;
+}
+.order-info h2{
+  color: var(--text-color);
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.apps{
+  width: 800px;
+  gap: 5px;
+}
+.apps .app{
+  width: 200px;
+  margin: 0;
+}
+.apps .app .uber img{
+  position: relative;
+  bottom: 100px;
+  margin: auto;
+  left: 80px;
+  width: 110px;
+}
+.apps .app  img{
+  width: 270px;
+}
