@@ -8,7 +8,7 @@
   --btn-color: #000;
   --bg-color: #f9f9f7;
   --hover: #e7e2e2;
-  --cards-color:#f5f0f0;
+  --cards-color: #f5f0f0;
   --banner-color: #474747;
   --p-color: #2c2f24;
   --eats-color: #414536;
@@ -28,10 +28,10 @@ body {
 
 body.dark-theme {
   --white: #1b1a35;
-  --banner-color:#bdb1b1;
+  --banner-color: #bdb1b1;
   --bg-color: #18162c;
   --p-color: #ffffff;
-  --cards-color:#1b1a35;
+  --cards-color: #1b1a35;
   --black: #ffffff;
   --btn-color: #ffffff;
   --text-color: #ffffff;
@@ -64,7 +64,7 @@ ul {
 }
 .text-center {
   text-align: center;
-} 
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -83,32 +83,32 @@ ul {
 .menu {
   text-align: center;
   padding: 50px 20px;
-  background-color: #fff;
-  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  font-family: "Segoe UI", sans-serif;
 }
 .menu .container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .menu h2 {
   font-size: 48px;
-  color: #222;
+  color: var(--text-color);
   margin-bottom: 10px;
   margin: auto;
 }
 
 .menu p {
   font-size: 14px;
-  color: #666;
+  color: var(--p-color);
   line-height: 1.6;
   max-width: 600px;
-  margin: auto ;
+  margin: auto;
 }
 
-.our-menu{
+.our-menu {
   margin: auto;
 }
 .tab {
@@ -116,18 +116,64 @@ ul {
   border: 1px solid #ccc;
   border-radius: 999px;
   background-color: transparent;
-  color: #333;
+  color: var(--text-color);
   font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .tab:hover {
-  background-color: #f2f2f2;
+  background-color: var(--hover);
 }
 
 .tab.active {
-  background-color: #a52a2a;
-  color: #fff;
+  background-color: var(--button-color);
+  color: var(--white);
   border-color: transparent;
+}
+
+.menu-food {
+  padding: 40px 0;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.menu-card {
+  width: 250px;
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  margin: auto;
+}
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+.card-body h3 {
+  color: #d23f3f;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.card-body h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: var(--text-color);
+}
+.card-body p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
 }

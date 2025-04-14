@@ -135,10 +135,10 @@ nav .container {
   margin: auto;
 }
 .nav-link.active {
-  background-color: var(--button-color); /* أو أي لون مميز */
+  background-color: var(--button-color); 
   border-radius: 20px;
   padding: 10px 17px;
-  color: var(--white); /* اختياري */
+  color: var(--white); 
 }
 
 nav .container .logo p {
