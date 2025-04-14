@@ -66,7 +66,10 @@ document.getElementById("moon").onclick = () => {
       });
         });
   };
-
+  function openDetails(page) {
+    window.location.href = page;
+  }
+  
   
 
 
