@@ -246,6 +246,7 @@ header .container ul li a {
     color: var(--text-color);
     margin-left: 0;
   }
+
 }
 .hero {
   background-image: url(../images/bg.png);

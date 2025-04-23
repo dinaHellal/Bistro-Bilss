@@ -25,6 +25,9 @@ document.getElementById("moon").onclick = () => {
   function goToPage() {
     window.location.href = "blog.html"; 
   }
+  function goToPage() {
+    window.location.href = "contact.html"; 
+  }
   const tabs = document.querySelectorAll(".tab");
 
   tabs.forEach((tab) => {
