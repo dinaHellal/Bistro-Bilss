@@ -93,6 +93,7 @@ ul {
   font-size: 60px;
   margin-bottom: 10px;
   font-weight: 400;
+  color: var(--text-color);
 }
 
 .contact-section p {
@@ -103,7 +104,7 @@ ul {
 }
 
 .contact-form {
-  background: #fff;
+  background: var(--white);
   padding: 30px;
   max-width: 700px;
   margin: 0 auto 40px;
@@ -165,6 +166,7 @@ button:hover {
 
 .contact-info h4 {
   margin-bottom: 15px;
+  color: var(--text-color);
 }
 
 p span {
