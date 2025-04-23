@@ -70,7 +70,56 @@ document.getElementById("moon").onclick = () => {
     window.location.href = page;
   }
   
-  
+  // حفظ القيم في localStorage عند الإدخال
+document.getElementById("name").addEventListener("input", (e) => {
+  localStorage.setItem("contact_name", e.target.value);
+});
+
+document.getElementById("email").addEventListener("input", (e) => {
+  localStorage.setItem("contact_email", e.target.value);
+});
+
+document.getElementById("subject").addEventListener("input", (e) => {
+  localStorage.setItem("contact_subject", e.target.value);
+});
+
+document.getElementById("message").addEventListener("input", (e) => {
+  localStorage.setItem("contact_message", e.target.value);
+});
+
+// عند تحميل الصفحة، نرجع القيم المحفوظة
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("name").value = localStorage.getItem("contact_name") || "";
+  document.getElementById("email").value = localStorage.getItem("contact_email") || "";
+  document.getElementById("subject").value = localStorage.getItem("contact_subject") || "";
+  document.getElementById("message").value = localStorage.getItem("contact_message") || "";
+});
+
+// عند الإرسال، نقدر نحذف البيانات لو حبيتي
+function submitForm() {
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const subject = document.getElementById("subject").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (name && email && subject && message) {
+    alert("Message sent successfully!");
+
+    // حذف القيم من localStorage بعد الإرسال (اختياري)
+    localStorage.removeItem("contact_name");
+    localStorage.removeItem("contact_email");
+    localStorage.removeItem("contact_subject");
+    localStorage.removeItem("contact_message");
+
+    // تفريغ النموذج
+    document.querySelector(".contact-form").reset();
+    return false;
+  }
+
+  alert("Please fill out all fields.");
+  return false;
+}
+
 
 
   
