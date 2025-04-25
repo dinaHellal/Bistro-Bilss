@@ -17,6 +17,8 @@
   --white: #ffffff;
   --text-color: #000000;
   --section-padding: 60px;
+  --background-img: url(../images/bg.png);
+
 }
 html {
   scroll-behavior: smooth;
@@ -27,15 +29,16 @@ body {
 }
 
 body.dark-theme {
-  --white: #1b1a35;
-  --banner-color:#bdb1b1;
-  --bg-color: #18162c;
+  --white: #1C0F0A;
+  --banner-color:#A84E18;
+  --bg-color: #120D0A;
   --p-color: #ffffff;
-  --cards-color:#1b1a35;
+  --cards-color:#1C0F0A;
   --black: #ffffff;
   --btn-color: #ffffff;
   --text-color: #ffffff;
-  --hover: #18162c;
+  --hover: #1C0F0A;
+  --background-img:url(../images/bg-dark.png);
 }
 section {
   padding: var(--section-padding) 0;
@@ -197,7 +200,7 @@ header .container ul li a {
   header .container ul {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 50px;
     right: 10px;
     padding: 10px 40px;
     background-color: var(--white);
@@ -214,14 +217,23 @@ header .container ul li a {
     top: -3px;
     left: -10px;
   }
-
+  header .container ul{
+border-radius: 15px; 
+height: 330px;
+width: 100%;
+}
   header .container ul li {
     padding: 15px;
+    padding-bottom: 15px;
     border-bottom: 1px solid rgb(0 0 0 / 0.1);
   }
   header .container ul li .book {
     padding: 10px;
     font-size: 13px;
+    position: relative;
+right: 110px;
+border: 1px solid rgb(0 0 0 / 0.3);
+
   }
   header .container ul li:last-child {
     border-bottom: none;
@@ -236,6 +248,7 @@ header .container ul li a {
     display: block;
     position: absolute;
     right: 10px;
+    cursor: pointer;
   }
   header .container input:checked + ul {
     display: block;
@@ -249,7 +262,7 @@ header .container ul li a {
 
 }
 .hero {
-  background-image: url(../images/bg.png);
+  background-image: var(--background-img);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -259,14 +272,12 @@ header .container ul li a {
   text-align: center;
 }
 .hero .container h1 {
+  color: var(--text-color);
   font-size: 80px;
   font-family: serif;
   line-height: 1;
   font-weight: 400;
   margin-bottom: 20px;
-}
-.hero .container p{
-  color: var(--h);
 }
 .hero .container .btn1 {
   padding: 15px 20px;
@@ -284,6 +295,12 @@ header .container ul li a {
   border: 1px solid;
   cursor: pointer;
 }
+@media (max-width: 991px) {
+  .hero{
+    background-image: none;
+    background-color: var(--bg-color);
+  }
+}
 .menu {
   text-align: center;
   padding: var(--section-padding);
@@ -300,6 +317,7 @@ header .container ul li a {
 .menu .cards .card {
   width: 250px;
   border: 1px solid var(--hover);
+  background-color: var(--white);
   border-radius: 10px;
   padding: 20px;
 }
@@ -356,14 +374,14 @@ header .container ul li a {
 }
 @media (max-width: 991px) {
   .about{
-    width: 300px;
+margin: auto;
   }
   .about-img img {
     width: 300px;
   }
   .about-inv {
     position: absolute;
-    left: 40px;
+    left: 70px;
     padding: 20px;
     width: 300px;
     border-radius: 15px;
@@ -490,14 +508,22 @@ header .container ul li a {
   color: var(--text-color);
 
 }
-@media (max-width: 991px) {
+@media (max-width: 991px){  
+  .delivery .container{
+    position: relative;
+    left: 30px;
+    justify-content: center;
+  }
   .delivery .container .delivery-img .image1 img {
     width: 200px;
+    margin: none;
   }
   .delivery-info {
     width: 200px;
     position: relative;
     top: 200px;
+    right: 20px;
+    margin-bottom: 100px;
   }
 }
 .customers {
@@ -551,17 +577,15 @@ padding-top: 100px;
 }
 
 .blog-header {
-  display: flex;
   justify-content: space-between;
   gap: 600px;
   align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 
 .blog-header h2 {
   font-size: 36px;
   color: var(--text-color);
+  margin-bottom: 20px;
 }
 
 .blog-header button {
@@ -582,7 +606,7 @@ padding-top: 100px;
 }
 
 .card2 {
-  background: var(--white);
+  background: var(--bg-color);
   border-radius: 16px;
   flex-wrap: wrap;
   overflow: hidden;
@@ -621,7 +645,7 @@ padding-top: 100px;
 
 .card2.large {
   flex: 1;
-  height: 620px;
+  height: 690px;
   min-width: 300px;
 }
 
@@ -629,11 +653,24 @@ padding-top: 100px;
   flex: 1;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .card2.small {
   width: calc(50% - 10px);
+}
+@media (max-width: 991px){
+  .blog-header {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .blog-header button{
+    margin: auto;
+  }
+  .card2.large{
+    height: 500px;
+  }
 }
 .footer {
   background-color: var(--banner-color);

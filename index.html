@@ -21,7 +21,7 @@ opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,
 <div class="phone d-flex">
   <div class="number d-flex">
   <img src="assets/icons/phone.png" alt="phone">
-  <p>(414) 857 - 0107</p>
+  <p class="description">(414) 857 - 0107</p>
 </div>
 <div class="email d-flex">
   <img src="assets/icons/phone (2).png" alt="phone">
@@ -48,10 +48,11 @@ opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,
           </a>
           <p >Bistro Bliss</p>
         </div>
-        <div class="toggle">
-          <label for="toggle"><img src="assets/icons/menu.webp" alt="menu" /></label>
-          <input type="checkbox" id="toggle" />
-          <ul>
+        <label for="toggle">
+          <img src="assets/icons/menu4.png" class="toggle" alt="menu" />
+        </label>
+        <input type="checkbox" id="toggle" hidden />
+          <ul id="menu">
             <li><a href="#home" class="nav-link active" onclick="window.location.href='index.html'" >Home</a></li>
             <li><a href="#about" class="nav-link " onclick="window.location.href='about.html'">About</a></li>
             <li><a href="#menu " class="nav-link " onclick="window.location.href='menu.html'" >Menu</a></li>
@@ -59,14 +60,14 @@ opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,
             <li><a href="#contact" class="nav-link " onclick="window.location.href='Contact.html'" >Contact</a></li>
             <li><a href="#" onclick="window.location.href='book.html'" class="book">Book A Table</a></li>
           
+            <img src="assets/icons/9254147_moon_crescent_night_mode_dark_icon.png" style="cursor: pointer;"  alt="moon" class="moon" id="moon">
           </ul>
         </div>
-        <img src="assets/icons/9254147_moon_crescent_night_mode_dark_icon.png" style="cursor: pointer;"  alt="moon" class="moon" id="moon">
       </div>
     </nav>
   </header>
 <section class="hero" id="home">
-  <div class="container">
+  <div class="container d-flex">
     <h1>Best food for <br>
       your taste</h1>
       <p class="description">Discover delectable cuisine and unforgettable moments <br> in our welcoming, culinary haven.</p>
@@ -169,7 +170,7 @@ opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,
 </section>
 <section class="delivery d-flex">
   <div class="container d-flex">
-    <div class="delivery-img ">
+    <div class="delivery-img  ">
       <div class="image1 d-flex">
         <img src="assets/images/mid-shot-chef-holding-plate-with-pasta-making-ok-sign 1.png" alt="delivery">
         <div class="images2"> 

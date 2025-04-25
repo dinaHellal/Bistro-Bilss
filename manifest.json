@@ -5,7 +5,7 @@
 	"theme_color": "#ad343e",
   "background_color": "#ad343e",
 	"display": "standalone",
-	"start_url": "https://dinahellal.github.io/Bistro-Bilss/",
+	"start_url": "/Bistro-Bilss/",
 	"scope": "https://dinahellal.github.io/Bistro-Bilss/",
 	"id": "https://dinahellal.github.io/Bistro-Bilss/",
 	"icons": [

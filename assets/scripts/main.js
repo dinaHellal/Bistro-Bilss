@@ -7,6 +7,15 @@ document.getElementById("moon").onclick = () => {
     document.getElementById("moon").src = "assets/icons/2682848_day_forecast_sun_sunny_weather_icon.png";
   }
 };
+document.getElementById("toggle").addEventListener("change", function () {
+  const Menu = document.getElementById("menu");
+  if (this.checked) {
+    Menu.classList.add("open");
+  } else {
+    Menu.classList.remove("open");
+  }
+});
+
   const navLinks = document.querySelectorAll(".nav-link");
 
   navLinks.forEach(link => {

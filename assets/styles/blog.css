@@ -27,15 +27,15 @@ body {
 }
 
 body.dark-theme {
-  --white: #1b1a35;
-  --banner-color: #bdb1b1;
-  --bg-color: #18162c;
+  --white: #1C0F0A;
+  --banner-color:#A84E18;
+  --bg-color: #120D0A;
   --p-color: #ffffff;
-  --cards-color: #1b1a35;
+  --cards-color:#1C0F0A;
   --black: #ffffff;
   --btn-color: #ffffff;
   --text-color: #ffffff;
-  --hover: #18162c;
+  --hover: #1C0F0A;
 }
 section {
   padding: var(--section-padding) 0;
