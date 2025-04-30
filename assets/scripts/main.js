@@ -64,25 +64,25 @@ document.getElementById("toggle").addEventListener("change", function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      localStorage.setItem("name", document.getElementById("name").value);
-      localStorage.setItem("phone", document.getElementById("phone").value);
-      localStorage.setItem("date", document.getElementById("date").value);
-      localStorage.setItem("time", document.getElementById("time").value);
-      localStorage.setItem("persons", document.getElementById("persons").value);
-
+      localStorage.setItem("name", document.getElementById("name").value .trim());
+      localStorage.setItem("phone", document.getElementById("phone").value.trim());
+      localStorage.setItem("date", document.getElementById("date").value.trim());
+      localStorage.setItem("time", document.getElementById("time").value.trim());
+      localStorage.setItem("persons", document.getElementById("persons").value.trim());
+      
       Swal.fire({
         icon: 'success',
         title: 'Table Booked',
-        text: '✅Your data has been saved in your browser',
+        text: '✅Your data has been saved ',
         confirmButtonText: 'Ok'
       });
         });
+      
   };
   function openDetails(page) {
     window.location.href = page;
   }
   
-  // حفظ القيم في localStorage عند الإدخال
 document.getElementById("name").addEventListener("input", (e) => {
   localStorage.setItem("contact_name", e.target.value);
 });
@@ -99,7 +99,6 @@ document.getElementById("message").addEventListener("input", (e) => {
   localStorage.setItem("contact_message", e.target.value);
 });
 
-// عند تحميل الصفحة، نرجع القيم المحفوظة
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("name").value = localStorage.getItem("contact_name") || "";
   document.getElementById("email").value = localStorage.getItem("contact_email") || "";
@@ -107,7 +106,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("message").value = localStorage.getItem("contact_message") || "";
 });
 
-// عند الإرسال، نقدر نحذف البيانات لو حبيتي
+
 function submitForm() {
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -117,19 +116,11 @@ function submitForm() {
   if (name && email && subject && message) {
     alert("Message sent successfully!");
 
-    // حذف القيم من localStorage بعد الإرسال (اختياري)
     localStorage.removeItem("contact_name");
     localStorage.removeItem("contact_email");
     localStorage.removeItem("contact_subject");
     localStorage.removeItem("contact_message");
-
-    // تفريغ النموذج
-    document.querySelector(".contact-form").reset();
-    return false;
   }
-
-  alert("Please fill out all fields.");
-  return false;
 }
 
 

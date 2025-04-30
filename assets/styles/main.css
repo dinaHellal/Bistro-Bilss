@@ -187,6 +187,7 @@ header .container ul li a:hover {
   border-radius: 20px;
   padding: 10px 17px;
   behavior: smooth;
+  cursor: pointer;
 }
 header label img {
   display: none;
@@ -375,13 +376,14 @@ border: 1px solid rgb(0 0 0 / 0.3);
 @media (max-width: 991px) {
   .about{
 margin: auto;
+width: 100%;
   }
   .about-img img {
     width: 300px;
   }
   .about-inv {
     position: absolute;
-    left: 70px;
+    left: 40px;
     padding: 20px;
     width: 300px;
     border-radius: 15px;
@@ -448,6 +450,7 @@ margin: auto;
 }
 .service .cards .card {
   width: 250px;
+  background-color: var(--cards-color);
 }
 .service .cards .card h5 {
   font-size: 20px;
@@ -578,7 +581,7 @@ padding-top: 100px;
 
 .blog-header {
   justify-content: space-between;
-  gap: 600px;
+  gap: 350px;
   align-items: center;
 }
 
