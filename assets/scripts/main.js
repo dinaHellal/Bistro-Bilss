@@ -69,15 +69,18 @@ document.getElementById("toggle").addEventListener("change", function () {
       localStorage.setItem("date", document.getElementById("date").value.trim());
       localStorage.setItem("time", document.getElementById("time").value.trim());
       localStorage.setItem("persons", document.getElementById("persons").value.trim());
+
+      
       
       Swal.fire({
         icon: 'success',
         title: 'Table Booked',
-        text: '✅Your data has been saved ',
+        text: '✅Your date has been saved ',
         confirmButtonText: 'Ok'
       });
-        });
       
+        });
+
   };
   function openDetails(page) {
     window.location.href = page;
