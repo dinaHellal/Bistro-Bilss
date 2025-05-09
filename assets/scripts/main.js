@@ -2,11 +2,20 @@ document.getElementById("moon").onclick = () => {
   if (document.body.classList.contains("dark-theme")) {
     document.body.classList.remove("dark-theme");
     document.getElementById("moon").src = "assets/icons/9254147_moon_crescent_night_mode_dark_icon.png";
+        localStorage.setItem("theme", "light");
+
   } else {
     document.body.classList.add("dark-theme");
     document.getElementById("moon").src = "assets/icons/2682848_day_forecast_sun_sunny_weather_icon.png";
+        localStorage.setItem("theme", "dark");
+
   }
 };
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-theme");
+  document.getElementById("moon").src = "assets/icons/2682848_day_forecast_sun_sunny_weather_icon.png";
+}
+
 document.getElementById("toggle").addEventListener("change", function () {
   const Menu = document.getElementById("menu");
   if (this.checked) {
@@ -26,17 +35,12 @@ document.getElementById("toggle").addEventListener("change", function () {
   });
 
   function goToPage() {
-    window.location.href = "book.html"; 
-  }
-  function goToPage() {
+    window.location.href = "book.html";
     window.location.href = "menu.html"; 
-  }
-  function goToPage() {
     window.location.href = "blog.html"; 
+    window.location.href = "contact.html";
   }
-  function goToPage() {
-    window.location.href = "contact.html"; 
-  }
+
   const tabs = document.querySelectorAll(".tab");
 
   tabs.forEach((tab) => {

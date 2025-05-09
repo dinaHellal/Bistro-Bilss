@@ -8,7 +8,7 @@
   --btn-color: #000;
   --bg-color: #f9f9f7;
   --hover: #e7e2e2;
-  --cards-color:#f5f0f0;
+  --cards-color: #f5f0f0;
   --banner-color: #474747;
   --p-color: #2c2f24;
   --eats-color: #414536;
@@ -18,27 +18,26 @@
   --text-color: #000000;
   --section-padding: 60px;
   --background-img: url(../images/bg.png);
-
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body.dark-theme {
-  --white: #1C0F0A;
-  --banner-color:#A84E18;
-  --bg-color: #120D0A;
+  --white: #1c0f0a;
+  --banner-color: #a84e18;
+  --bg-color: #120d0a;
   --p-color: #ffffff;
-  --cards-color:#1C0F0A;
+  --cards-color: #1c0f0a;
   --black: #ffffff;
   --btn-color: #ffffff;
   --text-color: #ffffff;
-  --hover: #1C0F0A;
-  --background-img:url(../images/bg-dark.png);
+  --hover: #1c0f0a;
+  --background-img: url(../images/bg-dark.png);
 }
 section {
   padding: var(--section-padding) 0;
@@ -67,7 +66,7 @@ ul {
 }
 .text-center {
   text-align: center;
-} 
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -88,7 +87,6 @@ ul {
   height: 40px;
   overflow: hidden;
   padding: 5px 0;
-
 }
 .banner .container {
   justify-content: space-between;
@@ -99,6 +97,7 @@ ul {
   width: 20px;
   height: 20px;
 }
+
 .banner p {
   font-size: 13px;
   color: var(--white);
@@ -137,10 +136,8 @@ nav .container {
   margin: auto;
 }
 .nav-link.active {
-  background-color: var(--button-color); 
-  border-radius: 20px;
-  padding: 10px 17px;
-  color: var(--white); 
+  color: var(--banner-color);
+  border-bottom: 1px solid var(--banner-color);
 }
 
 nav .container .logo p {
@@ -172,25 +169,22 @@ header .container ul li .book {
   cursor: pointer;
 }
 header .container ul li .book:hover {
-  background-color: var(--button-color);
-  color: var(--white);
   border: none;
+  color: var(--white);
+  background-color: var(--button-color);
 }
 header .container .moon {
   width: 40px;
-  position: absolute;
-  top: 5px;
-  right: -50px;
 }
 header .container ul li a:hover {
-  background-color: var(--hover);
-  border-radius: 20px;
-  padding: 10px 17px;
-  behavior: smooth;
   cursor: pointer;
+  color: var(--banner-color);
+  border-bottom: 1px solid var(--banner-color);
 }
 header label img {
   display: none;
+
+
 }
 
 header .container ul li a {
@@ -218,11 +212,11 @@ header .container ul li a {
     top: -3px;
     left: -10px;
   }
-  header .container ul{
-border-radius: 15px; 
-height: 330px;
-width: 100%;
-}
+  header .container ul {
+    border-radius: 15px;
+    height: 330px;
+    width: 100%;
+  }
   header .container ul li {
     padding: 15px;
     padding-bottom: 15px;
@@ -232,9 +226,8 @@ width: 100%;
     padding: 10px;
     font-size: 13px;
     position: relative;
-right: 110px;
-border: 1px solid rgb(0 0 0 / 0.3);
-
+    right: 110px;
+    border: 1px solid rgb(0 0 0 / 0.3);
   }
   header .container ul li:last-child {
     border-bottom: none;
@@ -260,7 +253,6 @@ border: 1px solid rgb(0 0 0 / 0.3);
     color: var(--text-color);
     margin-left: 0;
   }
-
 }
 .hero {
   background-image: var(--background-img);
@@ -297,7 +289,7 @@ border: 1px solid rgb(0 0 0 / 0.3);
   cursor: pointer;
 }
 @media (max-width: 991px) {
-  .hero{
+  .hero {
     background-image: none;
     background-color: var(--bg-color);
   }
@@ -310,7 +302,7 @@ border: 1px solid rgb(0 0 0 / 0.3);
 .menu h2 {
   font-size: 45px;
   font-weight: 400;
-margin: auto;
+  margin: auto;
 }
 .menu .cards {
   padding: 80px 0px;
@@ -322,7 +314,6 @@ margin: auto;
   border: 1px solid var(--hover);
   background-color: var(--white);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
 }
 .menu .cards .card .exmenu {
   font-size: 15px;
@@ -333,7 +324,7 @@ margin: auto;
   outline: none;
   background-color: transparent;
 }
-@media (max-width: 991px){
+@media (max-width: 991px) {
 }
 .about {
   position: relative;
@@ -375,12 +366,11 @@ margin: auto;
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
-
 }
 @media (max-width: 991px) {
-  .about{
-margin: auto;
-width: 100%;
+  .about {
+    margin: auto;
+    width: 100%;
   }
   .about-img img {
     width: 300px;
@@ -441,7 +431,6 @@ width: 100%;
   padding-bottom: 30px;
   margin-left: 40px;
   color: var(--text-color);
-
 }
 .service .cards {
   margin-left: 40px;
@@ -462,18 +451,18 @@ width: 100%;
   color: var(--text-color);
   margin-bottom: 10px;
 }
-@media (max-width: 991px){
-.service .container h2{
-  width: 100%;
-  font-size: 40px;
-}
-.service .cards{
-margin: auto;
-}
-  .service .cards .card img{
+@media (max-width: 991px) {
+  .service .container h2 {
+    width: 100%;
+    font-size: 40px;
+  }
+  .service .cards {
+    margin: auto;
+  }
+  .service .cards .card img {
     width: 250px;
   }
-  .service .cards .card p{
+  .service .cards .card p {
     width: 200px;
   }
 }
@@ -501,7 +490,7 @@ margin: auto;
 }
 .delivery-info {
   padding: 20px;
-  width: 400px;
+  width: 700px;
   padding-top: 200px;
   margin-left: 20px;
 }
@@ -516,15 +505,13 @@ margin: auto;
 .delivery-icons .icon {
   padding-top: 20px;
 }
-.delivery-icons .icon p{
+.delivery-icons .icon p {
   color: var(--text-color);
-
 }
-@media (max-width: 991px){  
-  .delivery .container{
+@media (max-width: 991px) {
+  .delivery .container {
     position: relative;
     left: 30px;
-    justify-content: center;
   }
   .delivery .container .delivery-img .image1 img {
     width: 200px;
@@ -533,11 +520,24 @@ margin: auto;
   .delivery-info {
     width: 200px;
     position: relative;
-    top: 200px;
+    top: 130px;
     right: 20px;
     margin-bottom: 100px;
   }
+  .delivery-info h3 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .delivery-icons .icon {
+    gap: 0px;
+  }
+  .delivery-icons .icon p {
+    position: relative;
+    bottom: 45px;
+    left: 50px;
+  }
 }
+
 .customers {
   padding: var(--section-padding);
 }
@@ -547,44 +547,42 @@ margin: auto;
   padding-bottom: 80px;
   text-align: center;
   color: var(--text-color);
-
 }
-.customers .cards .card p{
+.customers .cards .card p {
   border-bottom: 1px solid var(--hover);
 }
-.customers .cards .card{
+.customers .cards .card {
   background-color: var(--cards-color);
   padding: 20px 10px;
   border-radius: 10px;
 }
-.customers .user-info h5{
+.customers .user-info h5 {
   color: var(--text-color);
-
 }
-.customers .cards .card h4{
-color: var(--button-color);
-font-size: 20px;
-padding-bottom: 5px;
+.customers .cards .card h4 {
+  color: var(--button-color);
+  font-size: 20px;
+  padding-bottom: 5px;
 }
-.cards .card{
-  width: 300px; 
+.cards .card {
+  width: 300px;
   margin: auto;
 }
-@media (max-width: 991px){
-  .customers h2{
-padding-top: 100px; 
+@media (max-width: 991px) {
+  .customers h2 {
+    padding-top: 100px;
   }
-  .customers .cards .card{
+  .customers .cards .card {
     width: 200px;
   }
-  .customers .user-info h5{
+  .customers .user-info h5 {
     font-size: 12px;
   }
-  .customers .cards .card h4{
+  .customers .cards .card h4 {
     font-size: 15px;
   }
 }
-.blog{
+.blog {
   background-color: var(--hover);
 }
 
@@ -622,7 +620,7 @@ padding-top: 100px;
   border-radius: 16px;
   flex-wrap: wrap;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .card2 img {
@@ -672,15 +670,15 @@ padding-top: 100px;
 .card2.small {
   width: calc(50% - 10px);
 }
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .blog-header {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .blog-header button{
+  .blog-header button {
     margin: auto;
   }
-  .card2.large{
+  .card2.large {
     height: 500px;
   }
 }
@@ -744,7 +742,7 @@ padding-top: 100px;
 }
 
 .footer-heading::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -768,7 +766,6 @@ padding-top: 100px;
   transition: color 0.3s;
 }
 
-
 .footer-bottom {
   margin-top: 60px;
   text-align: center;
@@ -780,24 +777,23 @@ padding-top: 100px;
   margin-right: auto;
 }
 
-.instagram-placeholder{
+.instagram-placeholder {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .instagram-placeholder img {
-  width: calc(50% - 5px); 
+  width: calc(50% - 5px);
   height: auto;
   object-fit: cover;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
-
 
 @media (max-width: 768px) {
   .footer-section,
   .footer-about {
-      flex: 100%;
-      min-width: 100%;
+    flex: 100%;
+    min-width: 100%;
   }
 }
