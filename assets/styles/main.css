@@ -324,7 +324,7 @@ header .container ul li a {
 .menu .cards {
   padding: 80px 0px;
 }
-.menu .cards .card {
+.menu .cards .card { 
   width: 250px;
   padding: 20px;
   border-radius: 15px;
