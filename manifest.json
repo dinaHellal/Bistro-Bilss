@@ -6,7 +6,7 @@
   "background_color": "#ad343e",
 	"display": "standalone",
 	"scope": "/Bistro-Bilss/",
-	"start_url": "//Bistro-Bilss/",
+	"start_url": "/Bistro-Bilss/",
 	"id": "/Bistro-Bilss/",
 	"icons": [
     {
