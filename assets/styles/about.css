@@ -80,6 +80,13 @@ ul {
     width: 1170px;
   }
 }
+nav .container .logo a  {
+  font-size: 25px;
+  color: var(--text-color);
+  font-weight: 400;
+  font-family: serif;
+}
+
 .taste-features {
   background-image: url(../images/BG1.png);
   background-size: cover;
@@ -154,7 +161,9 @@ ul {
   width: 200px;
   background-color: var(--bg-color);
   padding: 5px;
-border-radius: 5px;
+border-radius: 10px;
+box-shadow: rgba(228, 226, 226, 0.2) 0px 2px 8px 0px;
+
 }
 .guests .cards .card h4{
   font-size: 30px;
@@ -174,6 +183,7 @@ margin: auto;
 }
 .customers .cards {
   padding-left: 70px;
+  margin: 0;
 }
 @media (max-width: 991px){
   .customers .cards {
