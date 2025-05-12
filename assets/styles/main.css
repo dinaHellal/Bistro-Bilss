@@ -344,9 +344,9 @@ margin-left: 5px;
   cursor: pointer;
 }
 @media (max-width: 991px) {
-.menu .cards .card{
+  .menu .cards .card{
   position: relative;
-  right: 30px;
+  right: 30px;;
 }
 }
 @media (max-width: 991px) {
@@ -582,6 +582,7 @@ height: 260px;
   border-bottom: 1px solid var(--hover);
 }
 .customers .cards .card {
+  width: 300px;
   background-color: var(--cards-color);
   padding: 20px 10px;
   border-radius: 10px;
@@ -612,6 +613,9 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   .customers .cards .card h4 {
     font-size: 15px;
+  }
+  .customers .cards .card img{
+    width: 60px;
   }
 }
 .blog {

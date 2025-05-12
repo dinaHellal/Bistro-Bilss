@@ -35,11 +35,14 @@ document.getElementById("toggle").addEventListener("change", function () {
   });
 
   function goToPage() {
-    window.location.href = "book.html";
-    window.location.href = "menu.html"; 
-    window.location.href = "blog.html"; 
-    window.location.href = "contact.html";
-  }
+    window.location.href = "book.html";  }
+  function goToPage() {
+    window.location.href = "menu.html"; } 
+      function goToPage() {
+    window.location.href = "blog.html"; }
+      function goToPage() {
+    window.location.href = "contact.html";}
+
 
   const tabs = document.querySelectorAll(".tab");
 
@@ -59,19 +62,19 @@ document.getElementById("toggle").addEventListener("change", function () {
   window.onload = function () {
     const form = document.getElementById("bookingForm");
 
-    document.getElementById("name").value = localStorage.getItem("name") || "";
-    document.getElementById("phone").value = localStorage.getItem("phone") || "";
-    document.getElementById("date").value = localStorage.getItem("date") || "";
-    document.getElementById("time").value = localStorage.getItem("time") || "";
+    document.getElementById("bokkingName").value = localStorage.getItem("bokkingName") || "";
+    document.getElementById("bokkingPhone").value = localStorage.getItem("bokkingPhone") || "";
+    document.getElementById("bookingDate").value = localStorage.getItem("bookingDate") || "";
+    document.getElementById("bokkingTime").value = localStorage.getItem("bokkingTime") || "";
     document.getElementById("persons").value = localStorage.getItem("persons") || "1 Person";
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      localStorage.setItem("name", document.getElementById("name").value .trim());
-      localStorage.setItem("phone", document.getElementById("phone").value.trim());
-      localStorage.setItem("date", document.getElementById("date").value.trim());
-      localStorage.setItem("time", document.getElementById("time").value.trim());
+      localStorage.setItem("bokkingName", document.getElementById("bokkingName").value .trim());
+      localStorage.setItem("bokkingPhone", document.getElementById("bokkingPhone").value.trim());
+      localStorage.setItem("bookingDate", document.getElementById("bookingDate").value.trim());
+      localStorage.setItem("bokkingTime", document.getElementById("bokkingTime").value.trim());
       localStorage.setItem("persons", document.getElementById("persons").value.trim());
 
       
