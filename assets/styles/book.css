@@ -121,6 +121,9 @@ height: 450px;
 }
 
 form {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
   background: var(--white);
   max-width: 600px;
   height: 450px;
@@ -134,42 +137,42 @@ form {
   left: 400px;
 }
 
-.booking-form {
+
+
+.form-group {
+  flex: 1 1 45%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 
-.form-row {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+.full-width {
+  flex: 1 1 100%;
 }
 
-.form-row input,
-.form-row select {
-  flex: 1;
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 17px;
-  font-size: 14px;
-  background-color: var(--bg-color);
+label {
   color: var(--text-color);
+  margin-bottom: 5px;
 }
 
-.booking-form button {
-  background: var(--button-color);
-  color: var(--white);
-  border: none;
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  background-color: #a52327;
+  color: white;
   padding: 14px;
-  border-radius: 30px;
   font-size: 16px;
+  border: none;
+  border-radius: 30px;
   cursor: pointer;
-  transition: 0.3s ease;
 }
 
-.booking-form button:hover {
-  background: var(--button-color);
+button:hover {
+  background-color: #8b1c1f;
 }
 @media (max-width: 991px){
   .map{
@@ -181,7 +184,7 @@ form {
   } 
   form{
     position: relative;
-    height: 500px;
+    height: 550px;
     left: 0;
     top: 50px;
     margin-bottom: 10px;

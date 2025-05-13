@@ -54,27 +54,16 @@ document.getElementById("toggle").addEventListener("change", function () {
   });
 
   const menuItems = document.querySelectorAll(".menu-item");
-  const form = document.getElementById("bookingForm");
+  const form = document.getElementById("booking-form");
 
-
-
-
-  window.onload = function () {
-    const form = document.getElementById("bookingForm");
-
-    document.getElementById("bokkingName").value = localStorage.getItem("bokkingName") || "";
-    document.getElementById("bokkingPhone").value = localStorage.getItem("bokkingPhone") || "";
-    document.getElementById("bookingDate").value = localStorage.getItem("bookingDate") || "";
-    document.getElementById("bokkingTime").value = localStorage.getItem("bokkingTime") || "";
-    document.getElementById("persons").value = localStorage.getItem("persons") || "1 Person";
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      localStorage.setItem("bokkingName", document.getElementById("bokkingName").value .trim());
-      localStorage.setItem("bokkingPhone", document.getElementById("bokkingPhone").value.trim());
-      localStorage.setItem("bookingDate", document.getElementById("bookingDate").value.trim());
-      localStorage.setItem("bokkingTime", document.getElementById("bokkingTime").value.trim());
+      localStorage.setItem("name", document.getElementById("name").value .trim());
+      localStorage.setItem("phone", document.getElementById("phone").value.trim());
+      localStorage.setItem("date", document.getElementById("date").value.trim());
+      localStorage.setItem("time", document.getElementById("time").value.trim());
       localStorage.setItem("persons", document.getElementById("persons").value.trim());
 
       
@@ -85,10 +74,18 @@ document.getElementById("toggle").addEventListener("change", function () {
         text: '✅Your date has been saved ',
         confirmButtonText: 'Ok'
       });
-      
-        });
+      form.reset();
+    });
+    window.addEventListener("DOMContentLoaded", function () {
+      const dateInput = document.getElementById("date");
+      const today = new Date().toISOString().split("T")[0]; 
+      dateInput.setAttribute("min", today);
 
-  };
+
+    });
+
+    
+
   function openDetails(page) {
     window.location.href = page;
   }
@@ -134,5 +131,3 @@ function submitForm() {
 }
 
 
-
-  

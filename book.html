@@ -84,29 +84,45 @@ opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,
         frameborder="0" loading="lazy"></iframe>
 </div>
     </div>
-    <form class="booking-form" id="bookingForm">
-      <div class="form-row">
-        <input type="date" id="booking-date" required />
-        <input type="time" id="booking-time" value="00:00" required />
+  <div class="booking-container">
+    <form id="booking-form">
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" required />
       </div>
-      <div class="form-row">
-        <input type="text" id="booking-name" placeholder="Enter your name" required />
-        <input type="tel" id="booking-phone" placeholder="x-xxx-xxx-xxxx" required />
+
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" required />
       </div>
-      <div class="form-row">
-        <select id="persons" required>
-          <option value="">Select Person</option>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="x-xxx-xxx-xxxx" required />
+      </div>
+
+      <div class="form-group full-width">
+        <label for="persons">Total Person</label>
+        <select id="persons">
           <option>1 Person</option>
           <option>2 Persons</option>
           <option>3 Persons</option>
           <option>4 Persons</option>
+          <option>5 Persons</option>
         </select>
       </div>
-      <button type="submit" >Book A Table</button>
+
+      <button type="submit">Book A Table</button>
+      
     </form>
-    <p id="msg" style="margin-top: 15px; font-weight: bold;"></p>
-    
-      </div>
+    <p id="msg" style="margin-top: 15px; "></p>
+  </div>
+
     </section>
     <footer class="footer">
       <div class="container">
